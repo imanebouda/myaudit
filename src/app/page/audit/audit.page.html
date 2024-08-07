@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Formulaire d'Audit</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form>
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Nom de l'Audit</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Date de l'Audit</ion-label>
+        <ion-datetime></ion-datetime>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Statut</ion-label>
+        <ion-select>
+          <ion-select-option value="En cours">En cours</ion-select-option>
+          <ion-select-option value="Terminé">Terminé</ion-select-option>
+          <ion-select-option value="Validé">Validé</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Description</ion-label>
+        <ion-textarea></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Type d'Audit</ion-label>
+        <ion-select>
+          <ion-select-option value="1">Type 1</ion-select-option>
+          <ion-select-option value="2">Type 2</ion-select-option>
+          <ion-select-option value="3">Type 3</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Auditeur</ion-label>
+        <ion-select>
+          <ion-select-option value="1">Auditeur 1</ion-select-option>
+          <ion-select-option value="2">Auditeur 2</ion-select-option>
+          <ion-select-option value="3">Auditeur 3</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      
+      <ion-button expand="full" >Créer</ion-button>
+    </ion-list>
+  </form>
+</ion-content>

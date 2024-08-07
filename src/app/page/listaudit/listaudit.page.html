@@ -1,0 +1,26 @@
+<!-- src/app/pages/audit-list/audit-list.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Liste des Audits</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let audit of audits">
+      <ion-label>
+        <h2>{{ audit.nomAudit }}</h2>
+        <p>{{ audit.dateAudit | date:'short' }}</p>
+        <p>Status: {{ audit.status }}</p>
+        <p>Description: {{ audit.description }}</p>
+        <ion-button expand="full" (click)="navigateToChecklist()">
+          Voir les Checklists
+        </ion-button>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+
+
+  
+</ion-content>

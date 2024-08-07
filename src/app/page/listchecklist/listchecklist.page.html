@@ -1,0 +1,20 @@
+<!-- src/app/pages/checklist-list/checklist-list.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Checklist List</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let checklist of checklists">
+      <ion-label>
+        <h2>{{ checklist.typeAudit.type }}</h2>
+        <p>Processus: {{ checklist.processus.libelle }}</p>
+        <p>SMQ: {{ checklist.smq.libelle }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>

@@ -13,5 +13,28 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-content>
+    <!-- Dropdown pour Checklist -->
+    <ion-item>
+      <ion-label>Checklist</ion-label>
+      <ion-select placeholder="Select Checklist">
+        <ion-select-option value="checklist1">Checklist 1</ion-select-option>
+        <ion-select-option value="checklist2">Checklist 2</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <!-- Dropdown pour Site -->
+    <ion-item>
+      <ion-label>Site</ion-label>
+      <ion-select placeholder="Select Site">
+        <ion-select-option value="site1">Site 1</ion-select-option>
+        <ion-select-option value="site2">Site 2</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+
+    <ion-button expand="full" routerLink="/tabs/tab2" color="primary">
+     Faire l'audit
+    </ion-button>
+  </ion-content>
 </ion-content>
